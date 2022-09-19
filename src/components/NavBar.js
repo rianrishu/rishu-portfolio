@@ -42,27 +42,37 @@ function NavBar() {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link href="/" 
+                        <Nav.Link 
                         className={activeLink === "home" ? "active navbar-link" : "navbar-link"}
-                        onClick={() => onUpdateActiveLink("home")}
-                        >Home</Nav.Link>
-                        <Nav.Link href="/" 
+                        onClick={() => {
+                            onUpdateActiveLink("home")
+                            document.getElementById('home').scrollIntoView()
+                            }}>
+                        Home</Nav.Link>
+                        <Nav.Link
                         className={activeLink === "skills" ? "active navbar-link" : "navbar-link"}
-                        onClick={() => onUpdateActiveLink("skills")}
+                        onClick={() => {
+                            onUpdateActiveLink("skills")
+                            document.getElementById('skills').scrollIntoView()
+                        }}
                         >Skills</Nav.Link>
-                        <Nav.Link href="/" 
+                        <Nav.Link
                         className={activeLink === "projects" ? "active navbar-link" : "navbar-link"}
-                        onClick={() => onUpdateActiveLink("projects")}
+                        onClick={() => {
+                            onUpdateActiveLink("projects")
+                            document.getElementById('project').scrollIntoView()
+                        }}
                         >Project</Nav.Link>
                     </Nav>
 
                     <span className="navbar-text">
                         <div className="social-icon">
-                                <a href='/'><img src={navicon1} alt=''/></a>
-                                <a href='/'><img src={navicon3} alt=''/></a>
-                                <a href='/'><img src={navicon2} alt=''/></a>
+                        <a 
+                            href="https://mail.google.com/mail/u/lee@example.org/?view=cm&to=rishuanand2552@gmail.com&su=Via,portfolio"><img src={navicon2} alt="Icon" /></a>
+                            <a href='https://www.linkedin.com/in/rishu-anand-9rian9999/'><img src={navicon1} alt=''/></a>
+                                <a href='https://www.instagram.com/rianrishu/'><img src={navicon3} alt=''/></a>
                         </div>
-                        <button className='vvd' onClick={() => console.log("Connect")}><span>Let's Connect</span></button>
+                        <button className='vvd' onClick={() => document.getElementById('connect').scrollIntoView()}><span>Let's Connect</span></button>
                     </span>
                 </Navbar.Collapse>
             </Container>

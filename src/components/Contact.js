@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Col, Row, Container } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
+import { MouseContainer, ChasingElement } from 'react-mouse-image-move'
 
 export default function Contact(){
     const initForm = {
@@ -12,7 +13,7 @@ export default function Contact(){
     };
 
     const [formDetails, setFormDetails] = useState(initForm);
-    const [status, setStatus] = useState(false);
+    // const [status, setStatus] = useState(false);
 
     const updateForm = (category, value) => {
         setFormDetails({
@@ -22,11 +23,23 @@ export default function Contact(){
     }
 
     return(
-        <section className="contact" id="connect">
+        <section className="contact" id="connect" style={{"border-radius": "35px"}}>
             <Container>
                 <Row className="align-items-center">
                     <Col md={6}>
-                        <img src={contactImg} alt="contact"/>
+                    <MouseContainer
+                        options={{
+                            effectType: 'perspective', // or 'movement'
+                            max: 15,
+                            perspective: 1000,
+                            scale: 1,
+                        }}
+                        chasingElement={
+                            <ChasingElement>
+                                <img src={contactImg} alt="contact"/>
+                            </ChasingElement>
+                          }
+                      />
                     </Col>
                     <Col md={6}>
                         <h2>Get in touch</h2>
@@ -70,7 +83,7 @@ export default function Contact(){
                                     rows={6}
                                     onChange={(e) => updateForm('message', e.target.value)}/>
                                     <button type="submit" onClick={() => console.log(formDetails)}><span>Submit</span></button>
-                                    {status ? <p 
+                                    {false ? <p 
                                                 style={{"background" : "green", "fontStyle" : "bold", "margin" : "0px", "padding": "0px"}}>
                                                     Message sent successfully
                                                     </p> : ""}

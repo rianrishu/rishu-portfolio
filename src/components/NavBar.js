@@ -63,16 +63,26 @@ function NavBar() {
                             document.getElementById('project').scrollIntoView()
                         }}
                         >Project</Nav.Link>
+                        <Nav.Link
+                        className={activeLink === "resume" ? "active navbar-link" : "navbar-link"}
+                        onClick={() => {
+                            onUpdateActiveLink("resume")
+                            document.getElementById('resume').scrollIntoView()
+                        }}
+                        >Resume</Nav.Link>
                     </Nav>
 
                     <span className="navbar-text">
                         <div className="social-icon">
                         <a 
-                            href="https://mail.google.com/mail/u/lee@example.org/?view=cm&to=rishuanand2552@gmail.com&su=Via,portfolio"><img src={navicon2} alt="Icon" /></a>
-                            <a href='https://www.linkedin.com/in/rishu-anand-9rian9999/'><img src={navicon1} alt=''/></a>
-                                <a href='https://www.instagram.com/rianrishu/'><img src={navicon3} alt=''/></a>
+                            onClick={() => window.open("https://mail.google.com/mail/u/lee@example.org/?view=cm&to=rishuanand2552@gmail.com&su=Via,portfolio", '_blank', 'noopener,noreferrer')}><img src={navicon2} alt="Icon" /></a>
+                            <a onClick={() => window.open('https://www.linkedin.com/in/rishu-anand-9rian9999/', '_blank', 'noopener,noreferrer')}><img src={navicon1} alt=''/></a>
+                                <a onClick={() => window.open('https://www.instagram.com/rianrishu/', '_blank', 'noopener,noreferrer')}><img src={navicon3} alt=''/></a>
                         </div>
-                        <button className='vvd' onClick={() => document.getElementById('connect').scrollIntoView()}><span>Let's Connect</span></button>
+                        <button className='vvd' 
+                        onClick={() => window.open('https://firebasestorage.googleapis.com/v0/b/rianq-9f3db.appspot.com/o/Resume-Rishu%20Anand.pdf?alt=media&token=c7e8eee6-1353-4c71-b629-44069c7cd56a')}>
+                            <span>Download CV</span>
+                        </button>
                     </span>
                 </Navbar.Collapse>
             </Container>
@@ -81,3 +91,7 @@ function NavBar() {
 }
 
 export default NavBar;
+
+// const openInNewTab = url => {
+    
+//   };

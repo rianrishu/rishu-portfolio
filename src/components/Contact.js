@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Col, Row, Container } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import { MouseContainer, ChasingElement } from 'react-mouse-image-move'
+import db from './Firebase'
+import { collection, doc, setDoc, addDoc } from "firebase/firestore"; 
 
 export default function Contact(){
     const initForm = {
@@ -13,7 +15,7 @@ export default function Contact(){
     };
 
     const [formDetails, setFormDetails] = useState(initForm);
-    // const [status, setStatus] = useState(false);
+    const [status, setStatus] = useState(false);
 
     const updateForm = (category, value) => {
         setFormDetails({
@@ -21,6 +23,23 @@ export default function Contact(){
             [category]: value
         })
     }
+
+    const Submit = async (e) => {
+        e.preventDefault();
+        let docRef = null;
+        docRef = await addDoc(collection(db,"Contacted-users"),{
+        firstName: formDetails.firstName,
+        lastName: formDetails.lastName,
+        email: formDetails.email,
+        phone: formDetails.phone,
+        message: formDetails.message
+        });
+        setFormDetails(initForm);
+        if(docRef != null){
+            setStatus(true);
+        }
+      };
+      
 
     return(
         <section className="contact" id="connect" style={{"border-radius": "35px"}}>
@@ -66,10 +85,11 @@ export default function Contact(){
                                     placeholder="Email" 
                                     onChange={(e) => updateForm('email', e.target.value)}/>
                                 </Col>
-                                <Col sm={6} className="px-1">
+                                <Col sm={6} size={12} className="px-1">
                                     <input 
                                     type="tel" 
                                     id="phone" 
+                                    value={formDetails.phone}
                                     name="phone" 
                                     pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" 
                                     placeholder="Phone no."
@@ -82,8 +102,8 @@ export default function Contact(){
                                     placeholder="Message" 
                                     rows={6}
                                     onChange={(e) => updateForm('message', e.target.value)}/>
-                                    <button type="submit" onClick={() => console.log(formDetails)}><span>Submit</span></button>
-                                    {false ? <p 
+                                    <button type="submit" onClick={Submit}><span>Submit</span></button>
+                                    {status ? <p 
                                                 style={{"background" : "green", "fontStyle" : "bold", "margin" : "0px", "padding": "0px"}}>
                                                     Message sent successfully
                                                     </p> : ""}

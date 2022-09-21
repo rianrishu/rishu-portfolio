@@ -15,10 +15,10 @@ export default function Footer() {
                     </Col>
                     <Col size={12} sm={6} className="text-center text-sm-end">
                         <div className="social-icon">
-                            <a 
-                            href="https://mail.google.com/mail/u/lee@example.org/?view=cm&to=rishuanand2552@gmail.com&su=Via,portfolio"><img src={navIcon2} alt="Icon" /></a>
-                            <a href="https://www.linkedin.com/in/rishu-anand-9rian9999/"><img src={navIcon1} alt="Icon" /></a>
-                            <a href="https://www.instagram.com/rianrishu/"><img src={navIcon3} alt="Icon" /></a>
+                        <a 
+                            onClick={() => window.open("https://mail.google.com/mail/u/lee@example.org/?view=cm&to=rishuanand2552@gmail.com&su=Via,portfolio", '_blank', 'noopener,noreferrer')}><img src={navIcon2} alt="Icon" /></a>
+                            <a onClick={() => window.open('https://www.linkedin.com/in/rishu-anand-9rian9999/', '_blank', 'noopener,noreferrer')}><img src={navIcon1} alt=''/></a>
+                                <a onClick={() => window.open('https://www.instagram.com/rianrishu/', '_blank', 'noopener,noreferrer')}><img src={navIcon3} alt=''/></a>
                         </div>
                         <p>Copyright &copy; 2022 RianQ</p>
                     </Col>

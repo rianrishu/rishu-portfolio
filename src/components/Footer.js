@@ -4,6 +4,7 @@ import logo from '../assets/img/my-project.png';
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
+import navicon4 from '../assets/img/icons8-github.svg'
 
 export default function Footer() {
     return (
@@ -18,6 +19,7 @@ export default function Footer() {
                         <a 
                             onClick={() => window.open("https://mail.google.com/mail/u/lee@example.org/?view=cm&to=rishuanand2552@gmail.com&su=Via,portfolio", '_blank', 'noopener,noreferrer')}><img src={navIcon2} alt="Icon" /></a>
                             <a onClick={() => window.open('https://www.linkedin.com/in/rishu-anand-9rian9999/', '_blank', 'noopener,noreferrer')}><img src={navIcon1} alt=''/></a>
+                            <a onClick={() => window.open('https://github.com/rianrishu', '_blank', 'noopener,noreferrer')}><img src={navicon4} alt=''/></a>
                                 <a onClick={() => window.open('https://www.instagram.com/rianrishu/', '_blank', 'noopener,noreferrer')}><img src={navIcon3} alt=''/></a>
                         </div>
                         <p>Copyright &copy; 2022 RianQ</p>

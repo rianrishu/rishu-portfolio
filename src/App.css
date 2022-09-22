@@ -309,6 +309,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
+/* @media (max-width:700px){
+  .banner img {
+      text-align:left;
+  }
+
+} */
+@media (min-width:350px){
+  .banner img {
+    flex: 1 1 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 396px;
+}
+}
+
 /************ Skills Css ************/
 .skill {
   padding: 0 0 50px 0;
@@ -699,4 +715,35 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .nav-link#resume-tabs-tab-second {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
+}
+
+/* ---------------Spinner Css----------- */
+.spinner{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+#parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #151515;
+}
+
+#child {
+  width: 100px;
+  height: 100px;
+  background: silver;
 }

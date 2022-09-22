@@ -26,7 +26,7 @@ function Banner() {
                         <h2 style={{ "height": "2rem" }}>
                             <Typewriter
                                 options={{
-                                    strings: ['Full Stack Web Developer', 'Competitive Programmer'],
+                                    strings: ['Full-Stack Web Developer', 'Competitive Programmer'],
                                     autoStart: true,
                                     loop: true,
                                     deleteSpeed: 50,

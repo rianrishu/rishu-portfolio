@@ -1,5 +1,5 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import ProjectCard  from "./ProjectCard";
+import ProjectCard from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
@@ -47,8 +47,9 @@ export default function Projects() {
         <Row>
           <Col size={12}>
             {/* <TrackVisibility> */}
-              {/* {({ isVisible }) => */}
-              <div className="animate__animated animate__fadeIn">
+            {/* {({ isVisible }) => */}
+            <div className="animate__animated animate__fadeIn">
+              <div className="project-bx">
                 <h2>Projects</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
@@ -72,7 +73,7 @@ export default function Projects() {
                               <ProjectCard
                                 key={index}
                                 {...project}
-                                />
+                              />
                             )
                           })
                         }
@@ -87,6 +88,7 @@ export default function Projects() {
                   </Tab.Content>
                 </Tab.Container>
               </div>
+            </div>
           </Col>
         </Row>
       </Container>

@@ -3,7 +3,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import NavBar from './components/NavBar';
 import Banner from './components/Banner';
-import Skills from './components/Skills';
+import Skills from './components/skills/Skills';
 import Project from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';

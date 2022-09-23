@@ -71,7 +71,7 @@ export default function Contact(){
                                     placeholder="First Name"
                                     onChange={(e) => updateForm('firstName', e.target.value)} />
                                 </Col>
-                                <Col sm={6} className="px=1">
+                                <Col sm={6} className="px-1">
                                     <input 
                                     type="text" 
                                     value={formDetails.lastName} 
@@ -102,7 +102,7 @@ export default function Contact(){
                                     placeholder="Message" 
                                     rows={6}
                                     onChange={(e) => updateForm('message', e.target.value)}/>
-                                    <button type="submit" onClick={Submit}><span>Submit</span></button>
+                                    <div className="d-flex justify-content-center"><button type="submit" onClick={Submit}><span>Submit</span></button></div>
                                     {status ? <p 
                                                 style={{"background" : "green", "fontStyle" : "bold", "margin" : "0px", "padding": "0px"}}>
                                                     Message sent successfully

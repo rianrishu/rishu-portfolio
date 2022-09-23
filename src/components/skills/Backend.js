@@ -7,35 +7,35 @@ export default function Languages() {
         <section>
             <Container>
                 <Row>
-                    <Col xs={4} md={3} >
+                    <Col  >
                         <div className="card">
                             <div className="d-flex justify-content-center card-pad">
                                 <SiDjango size="3em"/>
                             </div>
                         </div>
                     </Col>
-                    <Col xs={4} md={3} >
+                    <Col  >
                         <div className="card">
                             <div className="d-flex justify-content-center card-pad">
                                 <SiNodedotjs size="3em"/>
                             </div>
                         </div>
                     </Col>
-                    <Col xs={4} md={3} >
+                    <Col  >
                         <div className="card">
                             <div className="d-flex justify-content-center card-pad">
                                 <SiMongodb size="3em"/>
                             </div>
                         </div>
                     </Col>
-                    <Col xs={4} md={3} >
+                    <Col  >
                         <div className="card">
                             <div className="d-flex justify-content-center card-pad">
                                 <SiMysql size="3em"/>
                             </div>
                         </div>
                     </Col>
-                    <Col xs={4} md={3} >
+                    <Col  >
                         <div className="card">
                             <div className="d-flex justify-content-center card-pad">
                                 <SiFirebase size="3em"/>

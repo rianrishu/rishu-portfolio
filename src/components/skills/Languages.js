@@ -7,28 +7,28 @@ export default function Languages() {
         <section>
             <Container>
                 <Row>
-                    <Col xs={4} md={3} >
+                    <Col  >
                         <div className="card">
                             <div className="d-flex justify-content-center card-pad">
                                 <SiC size="3em"/>
                             </div>
                         </div>
                     </Col>
-                    <Col xs={4} md={3} >
+                    <Col  >
                         <div className="card">
                             <div className="d-flex justify-content-center card-pad">
                                 <SiCplusplus size="3em"/>
                             </div>
                         </div>
                     </Col>
-                    <Col xs={4} md={3} >
+                    <Col  >
                         <div className="card">
                             <div className="d-flex justify-content-center card-pad">
                                 <SiJavascript size="3em"/>
                             </div>
                         </div>
                     </Col>
-                    <Col xs={4} md={3} >
+                    <Col  >
                         <div className="card">
                             <div className="d-flex justify-content-center card-pad">
                                 <SiPython size="3em"/>

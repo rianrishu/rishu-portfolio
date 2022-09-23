@@ -7,35 +7,35 @@ export default function Frontend() {
         <section>
             <Container>
                 <Row>
-                    <Col xs={4} md={3} >
+                    <Col  >
                         <div className="card">
                             <div className="d-flex justify-content-center card-pad">
                                 <SiHtml5 size="3em" />
                             </div>
                         </div>
                     </Col>
-                    <Col xs={4} md={3} >
+                    <Col  >
                         <div className="card">
                             <div className="d-flex justify-content-center card-pad">
                                 <SiCss3 size="3em" />
                             </div>
                         </div>
                     </Col>
-                    <Col xs={4} md={3} >
+                    <Col  >
                         <div className="card">
                             <div className="d-flex justify-content-center card-pad">
                                 <SiReact size="3em" />
                             </div>
                         </div>
                     </Col>
-                    <Col xs={4} md={3} >
+                    <Col >
                         <div className="card">
                             <div className="d-flex justify-content-center card-pad">
                                 <SiBootstrap size="3em" />
                             </div>
                         </div>
                     </Col>
-                    <Col xs={4} md={3} >
+                    <Col  >
                         <div className="card">
                             <div className="d-flex justify-content-center card-pad">
                                 <SiMaterialui size="3em" />

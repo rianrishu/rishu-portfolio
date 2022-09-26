@@ -10,33 +10,39 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Portfolio",
+      description: "This one...",
+      projectUrl: "",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Automatized Project Registration",
+      description: "Developed in accordance with the process that is begin followed by my college which includes functionalities related to admin, faculty and student. Admin can register faculty, assign faculty, accept or reject topic added by student, faculty can add topic and assign marks to batches and students can create a batch/team, add topic or select topic on FCFS basis.",
+      projectUrl: "",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Music Controller",
+      description: "here is host and no host say client, a host can create a room where multiple clients can join and there a music playing in the room which only host can control like play, pause, skip the song but however there is also a voting system where clients can vote to skip the song if number of votes exceeds the number set by host.",
+      projectUrl: "",
       imgUrl: projImg3,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "College Feedback System",
+      description: "This project was a part of 12 hour Smart India hackathon 2022 at the college level which was developed in a team of 4. It is a web based project where admin can register college on the portal and students and parent can rate the college on the different factors like facilities in college, faculties, etc.",
+      projectUrl: "",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "CodePen Clone",
+      description: "CodePen-Clone is a web based app which is clone of Code-Pen with limited options like in this we can only run programs written in HTML, CSS and Javascript.",
+      projectUrl: "",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Face Recognition Brain",
+      description: "Face recognition brain is a web based application which takes link of image as a input and detects human face in that image with the help of Clarifai API.It also has basic signup and register feature with each indivisual user has a count of how many times entered to detect face in image.",
+      projectUrl: "",
       imgUrl: projImg3,
     },
   ];
@@ -51,7 +57,7 @@ export default function Projects() {
             <div className="animate__animated animate__fadeIn">
               <div className="project-bx">
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>These are some of my work...</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -80,10 +86,10 @@ export default function Projects() {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

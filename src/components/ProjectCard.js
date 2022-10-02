@@ -1,10 +1,10 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 
-export default function ProjectCard({ title, description, imgUrl }) {
+export default function ProjectCard({ title, description, projectUrl, imgUrl }) {
     return (
         <Col size={12} sm={6} md={4}>
-            <div className="proj-imgbx">
+            <div className="proj-imgbx" onClick={() => window.open(projectUrl, '_blank', 'noopener,noreferrer')}>
                 <img src={imgUrl} alt=""/>
                 <div className="proj-txtx">
                     <h4>{title}</h4>

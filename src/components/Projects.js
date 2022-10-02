@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
+import projImg2 from "../assets/img/project-img2.jpg";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import React from "react";
@@ -12,37 +12,37 @@ export default function Projects() {
     {
       title: "Portfolio",
       description: "This one...",
-      projectUrl: "",
+      projectUrl: "https://github.com/rianrishu/rishu-portfolio",
       imgUrl: projImg1,
     },
     {
       title: "Automatized Project Registration",
       description: "Developed in accordance with the process that is begin followed by my college which includes functionalities related to admin, faculty and student. Admin can register faculty, assign faculty, accept or reject topic added by student, faculty can add topic and assign marks to batches and students can create a batch/team, add topic or select topic on FCFS basis.",
-      projectUrl: "",
+      projectUrl: "https://github.com/rianrishu/automated_project_registration",
       imgUrl: projImg2,
     },
     {
       title: "Music Controller",
       description: "here is host and no host say client, a host can create a room where multiple clients can join and there a music playing in the room which only host can control like play, pause, skip the song but however there is also a voting system where clients can vote to skip the song if number of votes exceeds the number set by host.",
-      projectUrl: "",
+      projectUrl: "https://github.com/rianrishu/music_controller",
       imgUrl: projImg3,
     },
     {
       title: "College Feedback System",
       description: "This project was a part of 12 hour Smart India hackathon 2022 at the college level which was developed in a team of 4. It is a web based project where admin can register college on the portal and students and parent can rate the college on the different factors like facilities in college, faculties, etc.",
-      projectUrl: "",
+      projectUrl: "https://github.com/Rohith-C100/sih",
       imgUrl: projImg1,
     },
     {
       title: "CodePen Clone",
       description: "CodePen-Clone is a web based app which is clone of Code-Pen with limited options like in this we can only run programs written in HTML, CSS and Javascript.",
-      projectUrl: "",
+      projectUrl: "https://github.com/rianrishu/CodePen_clone",
       imgUrl: projImg2,
     },
     {
       title: "Face Recognition Brain",
       description: "Face recognition brain is a web based application which takes link of image as a input and detects human face in that image with the help of Clarifai API.It also has basic signup and register feature with each indivisual user has a count of how many times entered to detect face in image.",
-      projectUrl: "",
+      projectUrl: "https://github.com/rianrishu/face_recognition_brain",
       imgUrl: projImg3,
     },
   ];
